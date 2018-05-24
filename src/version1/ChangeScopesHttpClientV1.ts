@@ -10,7 +10,7 @@ import { IChangeScopesClientV1 } from './IChangeScopesClientV1';
 export class ChangeScopesHttpClientV1 extends CommandableHttpClient implements IChangeScopesClientV1 {
 
     constructor(config?: any) {
-        super('change_scopes');
+        super('v1/change_scopes');
 
         if (config != null)
             this.configure(ConfigParams.fromValue(config));
